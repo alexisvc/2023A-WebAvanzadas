@@ -1,0 +1,1 @@
+const ejemplo = "hola";
