@@ -1,0 +1,15 @@
+<h3>Lista de empleados</h3>
+<ul>
+    <li *ngFor="let employee of employees">
+    ID: {{ employee.id }} - Nombre: {{ employee.name }} - Dirección: {{ employee.address }}
+    </li>
+</ul>
+
+<div *ngIf="randomEmployee">
+    <h3>Random Employee:</h3>
+    <p>Id: {{ randomEmployee.id }}</p>
+    <p>Name: {{ randomEmployee.name }}</p>
+    <p>Address: {{ randomEmployee.address }}</p>
+</div>
+
+<button (click)="getRandomEmployee();">Get an employee</button>
